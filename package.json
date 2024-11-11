@@ -1,0 +1,22 @@
+{
+  "name": "teste-gastby",
+  "version": "1.0.0",
+  "private": true,
+  "description": "teste-gastby",
+  "author": "Rafael-TCampos",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^5.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
