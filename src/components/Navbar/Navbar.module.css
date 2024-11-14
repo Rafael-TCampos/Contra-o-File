@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #A5D6A7;
+  color: #fff;
+  position: fixed;       /* Navbar fixa */
+  top: 0;                /* Fixa no topo da página */
+  width: 100%;           /* Ocupa toda a largura */
+  z-index: 1000;         /* Garante que a navbar fique acima de outros elementos */
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logoImage {
+  width: 90px;
+  height: 50px;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.navItem {
+  margin: 0;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  background-color: #21BD3E;
+  border-radius: 6px;
+  padding: 6px 10px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #1e9e34;
+}
+
+.menuBtn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 830px) {
+  .menuBtn {
+    display: block;
+  }
+  
+  .navList {
+    display: none;
+  }
+
+  .navList.open {    /* lista dos botoes*/
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    height: calc(30% - 60px);
+    background: rgb(69, 75, 83);
+    padding: 1rem;
+    gap: 1rem;
+    z-index: 1001;
+    border-radius: 10px;
+  }
+  .navLink {
+    color: #fff;
+    background-color: transparent;
+    padding: 10px 0;
+  }
+  
+
+}
+
+
