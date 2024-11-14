@@ -1,0 +1,100 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.productSection {
+  padding: 2rem;
+  background-color: #E5E2E2;
+  
+}
+
+.mainTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+} 
+
+.productContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.textContainer {
+  max-width: 45%;
+  
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.25rem;
+  color: #d9534f; /* Cor da categoria */
+  display: block;
+  margin-bottom: 1rem;
+}
+
+
+.textContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  border-bottom: 1px solid #000;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.imgContainer {
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.imgPhoto {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.reverseLayout {
+  display: flex;
+  flex-direction: row-reverse; /* Imagem à esquerda e texto à direita */
+  gap: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 830px) {
+  .productContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .textContainer, .imgContainer {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .imgContainer {
+    margin-top: 1rem;
+  }
+}

@@ -6,5 +6,16 @@ module.exports = {
     title: `TesteGastby`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Josefin Sans\:100,300,400,500,700`, 
+          `Poppins\:200,300,400,500` 
+        ],
+        display: 'swap'
+      }
+    },
+  ],
 }
