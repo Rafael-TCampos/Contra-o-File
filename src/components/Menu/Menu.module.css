@@ -1,0 +1,64 @@
+.menu {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+#cardapio {
+  scroll-margin-top: 80px; /* Ajuste com base na altura da navbar */
+}
+
+
+.title {
+  font-family: "Josefin Sans";
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 4rem;
+}
+
+.text {
+  color: #d9534f;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Três colunas para os itens */
+  gap: 1.5rem;
+}
+
+.item {
+  text-align: center;
+  background: #dddada;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+.price {
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  font-weight: 500;
+  color: #28a745; /* Cor verde para destacar */
+  margin-top: 0.5rem;
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr; /* Empilha os itens em telas menores */
+  }
+  
+}

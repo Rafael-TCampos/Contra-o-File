@@ -32,7 +32,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/cardapio" className={styles.navLink}>
+          <Link to="#cardapio" className={styles.navLink}>
             Cardápio
           </Link>
         </li>

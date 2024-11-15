@@ -6,59 +6,70 @@
 }
 
 .productSection {
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-color: #E5E2E2;
+  margin-top: 30px;
   
 }
 
 .mainTitle {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 } 
 
 .productContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+  padding: 0 6rem;
+  gap: 2rem;
 }
 
 .textContainer {
   max-width: 45%;
-  
 }
 
 .subtitle {
   font-size: 1.5rem;
   font-family: "Josefin Sans";
-  font-weight: bold;
+  font-weight: 400;
   border-bottom: 1px solid #000;
-  padding-bottom: 0.25rem;
   color: #d9534f; /* Cor da categoria */
   display: block;
-  margin-bottom: 1rem;
+  width: 71%;
+  padding-bottom: 1rem;
 }
 
-
-.textContainer h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.textContainer .text{
+  font-family: "Josefin Sans";
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .description {
   font-size: 1rem;
+  font-family: "Poppins";
+  font-weight: 200;
   color: #555;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  margin-bottom: 1rem auto;
   line-height: 1.6;
-  border-bottom: 1px solid #000;
+  padding-top: 1rem; /* Ajusta o espaçamento entre o texto e a linha */
+  border-top: 1px solid #000;
+  width: 52%; /* Ajuste este valor para controlar o comprimento da linha */
 }
 
+
 .price {
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 1.40rem;
+  font-family: "Poppins";
+  font-weight: 300;
   color: #000;
 }
 
@@ -66,32 +77,36 @@
   max-width: 45%;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .imgPhoto {
-  width: 100%;
+  width: 85%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .reverseLayout {
-  display: flex;
   flex-direction: row-reverse; /* Imagem à esquerda e texto à direita */
-  gap: 2rem;
 }
 
-/* Responsividade */
+
 @media (max-width: 830px) {
   .productContainer {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem; 
   }
-  
+
   .textContainer, .imgContainer {
     max-width: 100%;
-    text-align: center;
+    margin: 0 auto;
+  }
+
+  .subtitle, .description {
+    width: 100%; 
   }
 
   .imgContainer {
