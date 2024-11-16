@@ -1,6 +1,11 @@
+@import "/src/styles/global.css";
+
+body {
+  padding-top: 70px;
+}
 .nav {
   display: flex;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-josefin);
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
@@ -10,6 +15,8 @@
   width: 100%;
   height: 70px;
   z-index: 1000;
+  top: 0;
+  left: 0;
 }
 
 .logoContainer {
@@ -18,7 +25,7 @@
 }
 
 .logoImage {
-  height: 60px;
+  width: 30%;
 }
 
 .navList {
@@ -51,7 +58,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 1001; /* Certifique-se de que está acima do menu */
+  z-index: 1001;
   background: none;
   border: none;
   cursor: pointer;
@@ -75,6 +82,10 @@
     display: block;
   }
 
+  .nav {
+    margin-top: auto;
+  }
+
   .navList {
     display: none;
   }
@@ -96,7 +107,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
   .navLink {
-    font-family: "Poppins";
+    font-family: var(--font-josefin);
     color: #000;
     background-color: transparent;
     padding: 10px 0;

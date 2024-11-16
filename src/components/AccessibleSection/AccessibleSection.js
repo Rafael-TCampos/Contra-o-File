@@ -1,16 +1,15 @@
 import * as React from "react";
 import * as styles from "./Accessible.module.css";
-import quote from "../../images/quote.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
-
+import { StaticImage } from "gatsby-plugin-image";
 const AccessibleSection = () => {
   return (
     <section className={styles.accessibleSection}>
       <h2 className={styles.heading}>Acessível a todos</h2>
       <div className={styles.imageContainer}>
-        <img
-          src={quote}
+        <StaticImage
+          src="../../images/quote.png"
           alt="Prato com comida vegana"
           className={styles.quoteImage}
         />

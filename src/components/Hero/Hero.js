@@ -1,16 +1,12 @@
 import * as React from "react";
 import * as styles from "../Hero/Hero.module.css";
-import heroImage from "../../images/korean.png";
-import folha from "../../images/folha.png";
-import foguete from "../../images/bx_rocket.png";
-import fone from "../../images/fone.png";
-
+import { StaticImage } from "gatsby-plugin-image";
 const Hero = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.textContainer}>
         <h1 className={styles.heroTitle}>
-          Comida <spam className={styles.colorText}>vegana,</spam> <br />
+          Comida <spam className={styles.colorText}>vegana, </spam> <br />
           saudável e fresca.
         </h1>
         <p>
@@ -19,22 +15,22 @@ const Hero = () => {
         </p>
         <div className={styles.iconContainer}>
           <div className={styles.iconWrapper}>
-            <img src={folha} alt="icon folha" className={styles.icon} />
+            <StaticImage src="../../images/folha.png" alt="icon folha" className={styles.icon} />
             <p className={styles.text}>Fresco</p>
           </div>
           <div className={styles.iconWrapper}>
-            <img src={foguete} alt="icon foquete" className={styles.icon} />
+            <StaticImage src="../../images/bx_rocket.png" alt="icon foquete" className={styles.icon} />
             <p className={styles.text}>Rápido</p>
           </div>
           <div className={styles.iconWrapper}>
-            <img src={fone} alt="icon fone" className={styles.icon} />
+            <StaticImage src="../../images/fone.png" alt="icon fone" className={styles.icon} />
             <p className={styles.text}>Suporte</p>
           </div>
         </div>
       </div>
 
       <div className={styles.imgContainer}>
-        <img src={heroImage} alt="Comida vegana" className={styles.heroImage} />
+        <StaticImage src="../../images/korean.png" alt="Comida vegana" className={styles.heroImage} />
       </div>
     </section>
   );

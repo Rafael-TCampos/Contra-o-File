@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem;
   background-color: #a5d6a7;
+  margin-top: 80px;
 }
 
 .footerLogo,
@@ -13,17 +13,14 @@
   padding: 10px;
 }
 
-.footerLogo {
+.footerLogo img{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 100%;
+  width: 60%;
 }
 
-.footerLogo img {
-  max-width: 200px; 
-  margin-bottom: 10px;
-}
+
 
 .footerDescription {
   font-family: "Josefin Sans";
@@ -82,7 +79,7 @@
 
 .mapImage img {
   width: 100%; 
-  max-width: 400px; 
+  max-width: 60%; 
   height: auto; 
 }
 
@@ -94,10 +91,6 @@
   font-family: "Josefin Sans";
   font-size: 1.2rem;
   font-weight: 400;
-}
-
-.mapImage img {
-  width: 200px; 
 }
 
 .footerHorarios ul {

@@ -1,6 +1,8 @@
+@import "/src/styles/global.css";
+
 .menu {
   padding: 2rem;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-josefin);
 }
 
 #cardapio {
@@ -8,10 +10,11 @@
 }
 
 .title {
-  font-family: "Josefin Sans";
+  font-family: var(--font-josefin);
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   padding-top: 4rem;
+  font-weight: 400;
 }
 
 .text {

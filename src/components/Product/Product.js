@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as styles from "./Product.module.css";
-import granola from "../../images/granola.png";
-import sopa from "../../images/sopa.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Product = () => {
   return (
@@ -22,7 +21,7 @@ const Product = () => {
           <span className={styles.price}>R$ 23,90</span>
         </div>
         <div className={styles.imgContainer}>
-          <img src={granola} alt="Foto sobremesa" className={styles.imgPhoto} />
+          <StaticImage src="../../images/granola.png" alt="Foto sobremesa" className={styles.imgPhoto} />
         </div>
       </div>
 
@@ -40,7 +39,7 @@ const Product = () => {
           <span className={styles.price}>R$ 35,00</span>
         </div>
         <div className={styles.imgContainer}>
-          <img src={sopa} alt="Foto almoço" className={styles.imgPhoto} />
+          <StaticImage src="../../images/sopa.png" alt="Foto almoço" className={styles.imgPhoto} />
         </div>
       </div>
     </section>

@@ -1,14 +1,12 @@
 import React from "react";
 import * as styles from "./FooterSection.module.css";
-import map from "../../images/Mapa.png";
-import logo from "../../images/logo2.png";
-import whatsappIcon from "../../images/whatsapp.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const FooterSection = () => {
   return (
     <footer className={styles.footerSection} id="contato">
       <div className={styles.footerLogo}>
-        <img src={logo} alt="Imagem logo" className={styles.footerImg} />
+        <StaticImage src="../../images/logo2.png" alt="Imagem logo" />
         <p className={styles.footerDescription}>
           Lorem ipsum dolor sit amet
           <br />
@@ -63,7 +61,7 @@ const FooterSection = () => {
         </div>
 
         <div className={styles.mapImage}>
-          <img src={map} alt="foto map" />
+          <StaticImage src="../../images/Mapa.png" alt="foto map" />
         </div>
       </div>
 
@@ -74,8 +72,8 @@ const FooterSection = () => {
         className={styles.whatsappLink}
         aria-label="Entre em contato pelo WhatsApp"
       >
-        <img
-          src={whatsappIcon}
+        <StaticImage
+          src="../../images/whatsapp.png"
           alt="WhatsApp"
           className={styles.whatsappIcon}
         />

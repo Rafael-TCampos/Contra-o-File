@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "/src/styles/global.css";
 
 .productSection {
   padding: 4rem 2rem;
@@ -11,7 +7,7 @@
 }
 
 .mainTitle {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--font-josefin);
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
