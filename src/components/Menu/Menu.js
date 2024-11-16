@@ -48,7 +48,7 @@ const Menu = ()=> {
           <h2>Sábado</h2>
           <p>Feijoada Vegana <br/>350g</p>
           <p className={styles.price}>R$ 36,80</p>
-          <img src={feijoada} alt="foto feijoada vegana" className={styles.feijoada}/>
+          <img src={feijoada} alt="foto feijoada vegana"/>
         </div>
       </div>
     </section>
