@@ -7,7 +7,6 @@
   scroll-margin-top: 80px; /* Ajuste com base na altura da navbar */
 }
 
-
 .title {
   font-family: "Josefin Sans";
   text-align: center;
@@ -22,7 +21,6 @@
   text-align: center;
   padding-bottom: 2rem;
 }
-
 
 .grid {
   display: grid;
@@ -52,13 +50,9 @@
   margin-top: 0.5rem;
 }
 
-
-
-
 /* Responsividade */
 @media (max-width: 800px) {
   .grid {
     grid-template-columns: 1fr; /* Empilha os itens em telas menores */
   }
-  
 }

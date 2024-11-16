@@ -1,0 +1,28 @@
+.familySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.familyImage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.familySection p {
+  font-family: "Josefin Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+
+@media (max-width: 800px){
+   .familySection p {
+    font-size: 1rem;
+   }
+}

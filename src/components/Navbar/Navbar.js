@@ -11,33 +11,46 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.logoContainer}>
-        <Link to="/" className={styles.logoLink}>
+        <Link to="/">
           <img src={logo} alt="logo do site" className={styles.logoImage} />
         </Link>
       </div>
-      <img
+      <button
         className={styles.menuBtn}
-        src={isOpen ? closeIcon : menuIcon}
-        alt="menu-button"
         onClick={() => setIsOpen(!isOpen)}
-      />
-
-      <ul
-        className={`${styles.navList} ${isOpen && styles.open}`}
-        onClick={() => setIsOpen(false)}
+        aria-label={isOpen ? closeIcon : menuIcon}
       >
+        <img
+          src={isOpen ? closeIcon : menuIcon}
+          alt={isOpen ? "Fechar menu" : "Abrir menu"}
+        />
+      </button>
+
+      <ul className={`${styles.navList} ${isOpen && styles.open}`}>
         <li className={styles.navItem}>
-          <Link to="/" className={styles.navLink}>
+          <Link
+            to="/"
+            className={styles.navLink}
+            onClick={() => setIsOpen(false)}
+          >
             Home
           </Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="#cardapio" className={styles.navLink}>
+          <Link
+            to="#cardapio"
+            className={styles.navLink}
+            onClick={() => setIsOpen(false)}
+          >
             Cardápio
           </Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/contato" className={styles.navLink}>
+          <Link
+            to="#contato"
+            className={styles.navLink}
+            onClick={() => setIsOpen(false)}
+          >
             Contato
           </Link>
         </li>

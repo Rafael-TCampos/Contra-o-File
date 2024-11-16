@@ -1,0 +1,92 @@
+.accessibleSection {
+  text-align: center;
+  margin: 2rem auto;
+  position: relative;
+  padding: 0 2rem;
+}
+
+/* Estilo do h2 */
+.heading {
+  font-family: "Josefin Sans";
+  font-size: 3rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 3rem;
+}
+
+/* Contêiner da imagem */
+.imageContainer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.quoteImage {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contêiner do texto */
+.quoteText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  color: white;
+}
+
+/* Texto dentro da imagem */
+.quoteParagraph {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0;
+  padding: 0 2rem;
+}
+
+/* Aspas como ícones */
+
+.quoteSymbolLeft,
+.quoteSymbolRight {
+  font-size: 5rem;
+  color: white;
+  position: absolute;
+}
+
+/* Posicionamento da aspa inicial */
+.quoteSymbolLeft {
+  bottom: 100%;
+  left: 1%;
+}
+
+/* Posicionamento da aspa final */
+.quoteSymbolRight {
+  top: 100%;
+  right: 1%;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .quoteImage {
+    width: 100vh;
+    height: 50vw;
+  }
+
+  .quoteParagraph {
+    font-size: 0.7rem;
+    padding: 0 1rem;
+  }
+
+  .quoteSymbolLeft,
+  .quoteSymbolRight {
+    font-size: 1rem;
+  }
+}

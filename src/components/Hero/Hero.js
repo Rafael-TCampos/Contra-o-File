@@ -10,7 +10,7 @@ const Hero = () => {
     <section className={styles.heroSection}>
       <div className={styles.textContainer}>
         <h1 className={styles.heroTitle}>
-          Comida <spam className={styles.colorText}>vegana, </spam> <br />{" "}
+          Comida <spam className={styles.colorText}>vegana,</spam> <br />
           saudável e fresca.
         </h1>
         <p>
@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
           <div className={styles.iconWrapper}>
             <img src={foguete} alt="icon foquete" className={styles.icon} />
-              <p className={styles.text}>Rápido</p>
+            <p className={styles.text}>Rápido</p>
           </div>
           <div className={styles.iconWrapper}>
             <img src={fone} alt="icon fone" className={styles.icon} />
